@@ -8,7 +8,7 @@
 
 pkgname=tuxmath
 pkgver=2.0.3
-pkgrel=6
+pkgrel=7
 pkgdesc="An educational math tutorial game starring Tux, the Linux Penguin"
 arch=("i686" "x86_64")
 url="https://github.com/tux4kids/${pkgname}/"
@@ -35,6 +35,9 @@ prepare() {
 
 build() {
   cd "${srcdir}/${pkgname}-upstream-${pkgver}"
+
+  CFLAGS+=" -Wno-incompatible-pointer-types"
+  CXXFLAGS+=" -Wno-incompatible-pointer-types"
 
   ./configure \
     --prefix=/usr \

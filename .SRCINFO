@@ -1,7 +1,7 @@
 pkgbase = tuxmath
 	pkgdesc = An educational math tutorial game starring Tux, the Linux Penguin
 	pkgver = 2.0.3
-	pkgrel = 6
+	pkgrel = 7
 	url = https://github.com/tux4kids/tuxmath/
 	arch = i686
 	arch = x86_64
